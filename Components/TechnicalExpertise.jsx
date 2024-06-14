@@ -37,7 +37,7 @@ function TechnicalExpertise() {
     <div className='max-w-2xl mx-auto w-full mt-[5%] px-4'>
        
          <Image  
-        src="/asset/billboardstatic.png"
+        src="/asset/bill-board-Recovered.gif"
          width={1719}
          height={474}
          alt='billboard'
