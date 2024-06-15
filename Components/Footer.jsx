@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image"
+import { Fade } from 'react-reveal';
 
 function Footer() {
   return (
     <div className=" relative rounded-t-xl mt-8 sm:mt-24 pt-24 overflow-hidden 2xl:bg-[#9522FB] text-white">
+        <Fade bottom duration={1500}>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6">
         <Image src="/asset/tech figma 1.png" width={320} height={320} className='w-28 object-contain cursor-pointer'/>
         <div className="max-w-[400px]">
@@ -10,6 +13,7 @@ function Footer() {
             <p className="text-center text-sm font-normal">Thank you for taking the time to explore my portfolio. I&apos;m excited about the opportunity to contribute to innovative projects and make a meaningful impact in the tech industry. Let&apos;s create something amazing together!</p>
         </div>
         </div>
+        </Fade>
         <p className="text-center mt-12 pb-2 text-xs text-[#FFDA40] animate-pulse">Design and Developed by AlienArTech</p>
         <div className="absolute 2xl:hidden top-0 -right-20 -z-10 ">
         <svg width="1840" height="511" viewBox="0 0 1840 511" fill="none" xmlns="http://www.w3.org/2000/svg">

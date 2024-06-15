@@ -1,7 +1,11 @@
+"use client"
 import HeaderSection from "./HeaderSection"
 import {StarIcon } from '@heroicons/react/24/solid'
+import { Fade } from 'react-reveal';
+
 function Skills() {
   return (
+    <Fade bottom duration={1500}>
     <div className="px-4 mt-8 sm:mt-24" id="skills">
         <div className="w-full mb-4 sm:pl-48">
         <HeaderSection title="Skills" color="#866C00"  content="I possess a diverse skill set that includes:"/>
@@ -59,6 +63,7 @@ function Skills() {
             
         </div>
     </div>
+    </Fade>
   )
 }
 

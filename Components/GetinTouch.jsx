@@ -1,10 +1,13 @@
+"use client"
 import React from 'react'
 import HeaderSection from './HeaderSection'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Fade } from 'react-reveal';
 
 function GetinTouch() {
   return (
+    <Fade bottom duration={1500}>
     <div className=" mt-8 sm:mt-24 text-[13px] sm:text-sm text-[#5D5D5D]" id='contact'>
     <div className="w-full mb-4 px-4 sm:pl-48">
     <HeaderSection title="Get in Touch" color="#CE0000"/>
@@ -21,6 +24,7 @@ function GetinTouch() {
     </Link>
     </div>
     </div>
+    </Fade>
   )
 }
 

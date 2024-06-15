@@ -1,5 +1,7 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
+import { Fade } from 'react-reveal';
 
 function HeroSection() {
   return (
@@ -8,6 +10,7 @@ function HeroSection() {
         <h1 className='text-4xl lg:text-5xl font-extrabold text-[#000000] leading-[48px] lg:leading-[68px]'>Hello and welcome! I&apos;m Abbey known as alienartech</h1>
         <h2 className='text-base font-medium text-[#464646] mt-3'>Am a Full-Stack Developer and UX/UI Designer.</h2>
         </div>
+        <Fade bottom duration={1500}>
         <div className='relative'>
         <Image
         src="/asset/2024_02_03_13_25_IMG_4611_edit 1.png"
@@ -18,6 +21,7 @@ function HeroSection() {
         />
         <div className='absolute -bottom-1 h-24 w-full  bg-gradient-to-t from-[#fffffa]  '/>
         </div>
+        </Fade>
         <div className='absolute top-0 -z-10 overflow-hidden w-full flex justify-center '>
         <div className="scale-110">
         <svg width="959" height="590" viewBox="0 0 959 590" fill="none" xmlns="http://www.w3.org/2000/svg">

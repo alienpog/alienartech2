@@ -1,11 +1,14 @@
+"use client"
 import Image from "next/image"
 import HeaderSection from "./HeaderSection"
 import UserContent from "./UserContent"
 import {contents, contents02, contents03} from "../dataimage"
-  
+import { Fade } from 'react-reveal';
+
 function ProjectHighlights() {
   return (
     <div className=" space-y-12 sm:space-y-24 mt-8 sm:mt-24 " id="projects">
+        <Fade bottom duration={1500}>
         <div>
         <div className="w-full sm:pl-20 mb-3">
           <div className="mb-4 px-4">
@@ -51,6 +54,8 @@ function ProjectHighlights() {
         </div>
         </div>
         </div>
+        </Fade>
+        <Fade bottom duration={1500}>
         <div>
         <div className="w-full sm:pl-20 mb-3">
         <p className="text-sm sm:text-base font-bold px-4">Empowering Fashion E-commerce with Next.js and Django</p>
@@ -92,7 +97,9 @@ function ProjectHighlights() {
 </div>
         </div>
         </div>
-        </div>  
+        </div>
+        </Fade>  
+        <Fade bottom duration={1500}>
         <div>
         <div className="w-full sm:pl-20 mb-3">
         <p className="text-sm sm:text-base font-bold px-4">Elevating Brand Identity and Engagement for Fashion E-commerce</p>
@@ -135,6 +142,7 @@ function ProjectHighlights() {
         </div>
         </div>
         </div>
+        </Fade>
     </div>
   )
 }

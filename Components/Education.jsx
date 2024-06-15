@@ -1,7 +1,10 @@
+"use client"
 import HeaderSection from "./HeaderSection"
+import { Fade } from 'react-reveal';
 
 function Education() {
   return (
+    <Fade bottom duration={1500}>
     <div className=" mt-8 sm:mt-24 text-[13px] sm:text-sm text-[#5D5D5D]">
         <div className="w-full mb-4 px-4 sm:pl-48">
         <HeaderSection title="Education" color="#C687FE"/>
@@ -12,6 +15,7 @@ function Education() {
         
         </div>
         </div>
+        </Fade>
   )
 }
 

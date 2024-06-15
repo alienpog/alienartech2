@@ -1,7 +1,9 @@
+"use client"
 import React from 'react'
 import HeaderSection from './HeaderSection'
 import UserContent from './UserContent'
 import Image from 'next/image'
+import { Fade, Zoom } from 'react-reveal';
 
 const contents = [
   {
@@ -30,20 +32,23 @@ const contents = [
 function TechnicalExpertise() {
   return (
     <div className='w-full'>
+    <Fade bottom duration={1500}>
     <div className='w-full sm:w-1/2 px-3 mt-8 sm:mt-24 sm:ml-48 bg-red'>
         <HeaderSection title="Technical Expertise" color="#BE76FF" content="my toolkit, you'll find proficiency in a myriad of technologies:"/>
         {contents.map(item =><UserContent key={item.index} content={item} color="#BE76FF"/>)} 
     </div>
+    </Fade>
+    <Zoom duration={1500}>
     <div className='max-w-2xl mx-auto w-full mt-[5%] px-4'>
-       
          <Image  
         src="/asset/bill-board-Recovered.gif"
          width={1719}
          height={474}
          alt='billboard'
          className=' w-full object-contain shadow-2xl rounded-lg '
-        />
+        /> 
     </div>
+    </Zoom>
     </div>
   )
 }
